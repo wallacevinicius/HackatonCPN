@@ -197,6 +197,10 @@ footer i:hover {
 		visibility: hidden;
 	}
 
+	header h2, p {
+		text-align: center;
+	}
+
 	.navbar-collapse {
 		background: white;
 		padding:  10px;

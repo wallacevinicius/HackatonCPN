@@ -2,7 +2,7 @@ $(document).ready(function(){
 	var black = $('.black'),
 	      fechar = $('#fechar')
 	      img = $('.imgWelcome');
-	//black.hide();
+	black.hide();
 	$('#pern').click(function(){
 		black.fadeIn(500);
 	});

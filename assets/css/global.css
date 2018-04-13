@@ -46,11 +46,11 @@ header p {
 }
 
 header button {
-	background: white;
+	background: #000;
 	padding: 8px 20px;
 	border-radius: 40px;
-	border: 2px solid #f39c12;
-	color: #f39c12;
+	border: 2px solid #000;
+	color: white;
 	font-size: 13px;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -59,14 +59,15 @@ header button {
 }
 
 header button:hover {
-	background: #f39c12;
-	color: white;
+	background: white;
+	border: 2px solid #f39c12;
+	color: #f39c12;
 }
 
 header button:focus {
-	background: #000;
-	border: 2px solid #000;
-	color: white;
+	background: #f1c40f;
+	border: 2px solid #f1c40f;
+	color: black;
 }
 
 header .welcome {
@@ -102,14 +103,73 @@ header .imageCol {
 } 
 
 video.resp {
-    width: auto;
-    min-width: 100%;
-    min-height: 500px;
-    background-size: cover;
-    position: absolute;
-    right: -100px;
-    bottom: -200px;
-    opacity: 0.1;
+	width: auto;
+	min-width: 100%;
+	min-height: 500px;
+	background-size: cover;
+	position: absolute;
+	right: -100px;
+	bottom: -200px;
+	opacity: 0.1;
+}
+
+#status {
+	text-align: center;
+}
+
+#states .title {
+	background: linear-gradient(to right, #f1c40f, #f39c12);
+	padding:  30px 0;
+	z-index: 1;
+	box-shadow: inset 0px 13px 10px -11px rgba(0, 0, 0, 0.2) ;
+}
+
+#states h2 {
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	font-size: 28px;
+}
+
+#states .divide {
+	background: #ffdb4c;
+	width: 200px;
+	height: 4px;
+	left: 50%;
+	margin: 15px 0 15px -100px;
+	position: relative;
+}
+
+#states .divide::before {
+	content: "";
+	margin-right: 0px;
+	width: 0; 
+	height: 0; 
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 15px solid #F1B500;
+	float: left;
+	margin-top: 42%;
+	margin-left: 80px;
+}
+
+#states p {
+	color: rgba(0,0,0,0.5);
+	font-size: 13px;
+	text-align: center;
+	text-shadow: 0 1px 0px rgba(255, 255, 255, 0.3);
+}
+
+#states #map {
+	margin: 50px 0;
+}
+
+footer {
+	background: #222;
+	padding:  40px 0;
+	color: white;
 }
 
 #svg-map path { fill:#CCC ; transition: all 0.2s; font-weight: bold;}

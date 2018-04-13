@@ -1,8 +1,9 @@
 $(document).ready(function(){
 	var black = $('.black'),
-	      fechar = $('#fechar');
+	      fechar = $('#fechar')
+	      img = $('.imgWelcome');
 	black.hide();
-	$('#pernambuco').click(function(){
+	$('#pern').click(function(){
 		black.fadeIn(500);
 	});
 	fechar.click(function() {

@@ -7,18 +7,19 @@ body {
 }
 
 header {
-	background-image: url('../images/wallpaper.png');
+	background-image: url('../images/background.png');
 	background-attachment: fixed;
 	background-size: cover;
-	height: 450px;
+	height: 500px;
 	overflow: hidden;
 	text-align: justify;
 	box-shadow: 0 0 10px 7px rgba(0, 0, 0, 0.05);
+	text-align: center;
 }
 
 header .gradient {
-	background: rgba(0, 0, 0, 0.9);
-	height: 450px;
+	background: rgba(20, 20, 20, 0.9);
+	height: 500px;
 }
 
 .navbar {
@@ -62,6 +63,7 @@ header button {
 	color: #f1c40f;
 	font-size: 13px;
 	text-transform: uppercase;
+	margin-top: 30px;
 	font-weight: bold;
 	transition: all 0.2s;
 	cursor: pointer;
@@ -112,8 +114,11 @@ header .imageCol {
 
 .black .toolbar {
 	background-color: #333;
-	height: 40px;
-	line-height: 40px;
+	padding:  15px 0;
+	color: white;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: bold;
 }
 
 .black .title {
@@ -245,7 +250,12 @@ footer i:hover {
 
 @media (max-width: 991px){
 	header {
-		height: 450px;
+		height: 550px;
+		text-align: center;
+	}
+
+	header .gradient {
+		height: 550px;
 		text-align: center;
 	}
 
@@ -296,6 +306,10 @@ footer i:hover {
 
 	#map {
 		margin: 4px 0!important;
+	}
+
+	.black .toolbar {
+		text-align: center;
 	}
 }
 

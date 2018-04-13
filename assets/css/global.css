@@ -7,17 +7,23 @@ body {
 }
 
 header {
-	background: white;
-	height: 400px;
+	background-image: url('../images/wallpaper.png');
+	background-attachment: fixed;
+	background-size: cover;
+	height: 450px;
 	overflow: hidden;
 	text-align: justify;
 	box-shadow: 0 0 10px 7px rgba(0, 0, 0, 0.05);
 }
 
+header .gradient {
+	background: rgba(0, 0, 0, 0.9);
+	height: 450px;
+}
+
 .navbar {
-	background: white;
+	background: transparent;
 	height: 60px;
-	box-shadow: 0 0 10px 7px rgba(0, 0, 0, 0.05);
 	position: fixed;
 	z-index: 999;
 }
@@ -25,32 +31,35 @@ header {
 	font-size: 16px;
 	font-weight: bold;
 	text-transform: uppercase;
+	color: white!important;
 }
 
 .nav-link {
 	text-transform: uppercase;
 	font-size: 13px;
 	font-weight: bold;
+	color: white!important;
 }
 
 header h2 {
 	text-transform: uppercase;
-	color: #333;
+	color: white;
 	font-weight: bold;
 	margin-top:80px;
 }
 
 header p {
 	font-size: 13px;
-	color: #888;
+	color: white;
+	margin-bottom: 40px;
 }
 
 header button {
-	background: #000;
+	background: transparent;
 	padding: 8px 20px;
 	border-radius: 40px;
-	border: 2px solid #000;
-	color: white;
+	border: 2px solid #f1c40f;
+	color: #f1c40f;
 	font-size: 13px;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -58,13 +67,7 @@ header button {
 	cursor: pointer;
 }
 
-header button:hover {
-	background: white;
-	border: 2px solid #f39c12;
-	color: #f39c12;
-}
-
-header button:focus {
+header button:hover, button:focus {
 	background: #f1c40f;
 	border: 2px solid #f1c40f;
 	color: black;
@@ -72,21 +75,26 @@ header button:focus {
 
 header .welcome {
 	background: linear-gradient(to bottom, rgba(241, 196, 15, 0.8),rgba(243, 156, 18, 0.8));
-	width: 500px;
-	height: 500px;
-	transform: rotate(45deg);
+	width: 600px;
+	height: 600px;
 	overflow: hidden;
+	transform: rotate(45deg);
+	margin-top: -120px;
+	margin-left: 70px;
+
 }
 
 header .welcome img {
 	transform: rotate(-45deg);
-	margin-left: 130px;
-	margin-top: 120px;
+	margin-left: 160px;
+	margin-top: 180px;
 	z-index: 99;
+	filter: brightness(0) invert(1) drop-shadow(0 20px 15px rgba(0, 0, 0, 0.1));
 }
 
 header .imgWelcome {
 	max-height: 300px;
+	filter: brightness(100%);
 }
 
 header .imageCol {
@@ -108,8 +116,8 @@ video.resp {
 	min-height: 500px;
 	background-size: cover;
 	position: absolute;
-	right: -100px;
-	bottom: -200px;
+	right: -500px;
+	bottom: -100px;
 	opacity: 0.1;
 }
 
@@ -191,6 +199,7 @@ footer i:hover {
 @media (max-width: 991px){
 	header {
 		height: 450px;
+		text-align: center;
 	}
 
 	header .welcome {
@@ -206,7 +215,7 @@ footer i:hover {
 		padding:  10px;
 		border-radius: 4px;
 		box-shadow: 0 0 0 1px rgba(0,0,0,0.05), 0 0 5px 1px rgba(0, 0, 0, 0.1);
-		margin-top: 30px;
+		margin-top: 160px;
 	}
 
 	.navbar-collapse::before {

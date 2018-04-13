@@ -12,23 +12,4 @@ $(document).ready(function(){
 	fechar.css({
 		cursor: 'pointer'
 	});
-
-	function looping(time) {
-		img.animate({
-			marginTop: '120px',
-			marginLeft: '130px'
-		});
-		delay(milliseconds, time);
-		img.animate({
-			marginTop: '100px',
-			marginLeft: '110px'
-		});
-		delay(milliseconds, time)
-
-		setTimeout(function(){
-			looping();
-		}, 10);
-	}
-
-	looping(1000);
 });

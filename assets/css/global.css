@@ -196,6 +196,17 @@ footer i:hover {
 	color: #f1c40f;
 }
 
+.navbar-light .navbar-toggler {
+	color: white!important;
+	border-color: white!important;
+	padding:  10px 10px;
+	margin:  5px -4px 0 0;
+}
+
+.navbar-light .navbar-toggle i {
+	color: white;
+}
+
 @media (max-width: 991px){
 	header {
 		height: 450px;

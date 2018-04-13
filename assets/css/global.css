@@ -168,8 +168,75 @@ video.resp {
 
 footer {
 	background: #222;
-	padding:  40px 0;
+	padding:  40px 0 20px 0;
 	color: white;
+}
+
+footer .imageLocal {
+	text-align: right;
+}
+
+footer i {
+	font-size: 25px;
+	margin: 10px 0;
+	padding-right: 10px;
+	transition: all 0.2s;
+	cursor: pointer;
+}
+
+footer i:hover {
+	color: #f1c40f;
+}
+
+@media (max-width: 991px){
+	header {
+		height: 450px;
+	}
+
+	header .welcome {
+		visibility: hidden;
+	}
+
+	.navbar-collapse {
+		background: white;
+		padding:  10px;
+		border-radius: 4px;
+		box-shadow: 0 0 0 1px rgba(0,0,0,0.05), 0 0 5px 1px rgba(0, 0, 0, 0.1);
+		margin-top: 30px;
+	}
+
+	.navbar-collapse::before {
+		content: "";
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 10px;
+		width: 0; 
+		height: 0; 
+		float: right;
+		margin-top: -18px;
+		margin-right: 10px;
+		border-left: 8px solid transparent;
+		border-right: 8px solid transparent;
+		border-bottom: 8px solid white;
+		filter: drop-shadow(0 0px rgba(0,0,0,0.6));
+	}
+
+	footer {
+		text-align: center;
+	}
+
+	footer .imageLocal {
+		text-align: center;
+	}
+
+	#svg-map {
+		width: 300px!important;
+		margin-left: -150px!important;
+	}
+
+	#map {
+		margin: 4px 0!important;
+	}
 }
 
 #svg-map path { fill:#CCC ; transition: all 0.2s; font-weight: bold;}

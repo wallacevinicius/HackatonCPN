@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
 
 body {
-	background-color:  #eee!important;
+	background-color:  #f5f5f5!important;
 	margin: 0 auto;
 	font-family: Roboto;
 }
@@ -106,10 +106,30 @@ header .imageCol {
 
 .black {
 	position: fixed;
-	background: #ecf0f1;
+	background: #f5f5f5;
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
+	overflow: scroll;
+}
+
+.black table {
+	font-size: 12px;
+	text-align: center;
+}
+
+.black .titleTable {
+	background: linear-gradient(to right, #f1c40f, #f39c12);
+	height: 35px;
+	line-height: 35px;
+	color: white;
+	font-size: 12px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight:  bold;
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	border-radius: 6px 6px 0 0;
+	box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1);
 }
 
 .black .toolbar {
@@ -118,7 +138,14 @@ header .imageCol {
 	color: white;
 	font-size: 12px;
 	text-transform: uppercase;
-	font-weight: bold;
+}
+
+.black .toolbar .numPop {
+	font-weight: 900;
+}
+
+.black .infos{
+	margin:  15px 0;
 }
 
 .black .title {
@@ -149,6 +176,20 @@ header .imageCol {
 	color: rgba(0,0,0,0.5);
 	font-size: 13px;
 	text-shadow: 0 1px 0px rgba(255, 255, 255, 0.3);
+}
+
+.nav-pills .nav-link {
+	background-color: #BBB!important;
+	margin-right: 20px;
+	transition: all 0.2s;
+}
+
+.nav-pills .nav-link:hover {
+	background-color: #f1c40f!important;
+}
+
+.nav-pills .nav-link.active {
+	background-color:  black!important;
 }
 
 video.resp {
@@ -246,6 +287,14 @@ footer i:hover {
 
 .navbar-light .navbar-toggle i {
 	color: white;
+}
+
+.prevent-click {
+     pointer-events: none;
+}
+
+.opacity {
+	fill: #FFF;
 }
 
 @media (max-width: 991px){

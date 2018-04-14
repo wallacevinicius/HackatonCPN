@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
 
 body {
 	background-color:  #f5f5f5!important;
 	margin: 0 auto;
-	font-family: Roboto;
+	font-family: Open Sans;
 }
 
 header {
@@ -110,11 +110,11 @@ header .imageCol {
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
-	overflow: scroll;
+	overflow-y: scroll;
 }
 
 .black table {
-	font-size: 12px;
+	font-size: 13px;
 	text-align: center;
 }
 
@@ -190,6 +190,20 @@ header .imageCol {
 
 .nav-pills .nav-link.active {
 	background-color:  black!important;
+}
+
+.nav-pills .nav-link.active::after {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 0; 
+	height: 0; 
+	position: absolute;
+	margin-left: -20px;
+	margin-top: 27px;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid #000;
 }
 
 video.resp {
@@ -298,7 +312,8 @@ footer i:hover {
 }
 
 .alert {
-	font-size: 12px;
+	font-size: 13px;
+	text-shadow: 0 0 0 1px rgba(255,255,255,0.77);
 }
 
 @media (max-width: 991px){
@@ -376,10 +391,10 @@ footer i:hover {
 }
 
 #svg-map path { fill:#CCC ; transition: all 0.2s; font-weight: bold;}
-#svg-map text { fill:#fff; font:12px Roboto, sans-serif; cursor:pointer; transition: all 0.2s; font-weight: bold;}
+#svg-map text { fill:#fff; font:11px Roboto, sans-serif; cursor:pointer; transition: all 0.2s; font-weight: bold; text-shadow:  0 2px 1px rgba(0, 0, 0, 0.15)}
 #svg-map a{ text-decoration:none; transition: all 0.2s;}
 #svg-map a:hover { cursor:pointer; text-decoration:none;  }
-#svg-map a:hover path{ fill:#f1c40f !important }
+#svg-map a:hover path{ fill:#f1c40f !important;}
 #svg-map a:focus path{ fill:#000 !important }
 #svg-map .circle { fill:#CCC }
 #svg-map a:hover .circle { fill:#f1c40f !important; cursor:pointer }

@@ -179,14 +179,15 @@ $(document).ready(function(){
 		var tools = $('.black > .toolbar > .container');
 
 		//Variaveis dos dados de investimento de cada estado
-		var amazonas = [["MOBILIDADE",934120],["IMPLEMENTAÇÃO DE PROJETOS/SISTEMAS",505266926.45],["PESQUISA/EDUCAÇÃO",4238538.84],["MEDICAMENTOS",8620451.32],["ESTRUTURA",35632047.96],["PROJETOS DE SANEMANTO",2614977.28]];
-		var roraima = [["MOBILIDADE",1162347.50],["IMPLEMENTAÇÃO DE PROJETOS/SISTEMAS",70101652.90],["PESQUISA/EDUCAÇÃO",49500.00],["MEDICAMENTOS",1118095.11],["ESTRUTURA",5899278.71],["PROJETOS DE SANEMANTO",1056193.08]];
-		var amapa = [["MOBILIDADE",2603080.00],["IMPLEMENTAÇÃO DE PROJETOS/SISTEMAS",120964128.87],["PESQUISA/EDUCAÇÃO",194500.00],["MEDICAMENTOS",528552.92],["ESTRUTURA",10994669.61],["PROJETOS DE SANEMANTO",3166085.20]];
-		var para = [["MOBILIDADE",3023242.12],["IMPLEMENTAÇÃO DE PROJETOS/SISTEMAS",318927789.37],["PESQUISA/EDUCAÇÃO",4498128.11],["MEDICAMENTOS",7841157.14],["ESTRUTURA",26364172.11],["PROJETOS DE SANEMANTO",13781633.71]];
-		var tocantins = [["MOBILIDADE",238110.03],["IMPLEMENTAÇÃO DE PROJETOS/SISTEMAS",259271317.24],["PESQUISA/EDUCAÇÃO",324500.00],["MEDICAMENTOS",1615367.95],["ESTRUTURA",8921108.24],["PROJETOS DE SANEMANTO",1349566.80]];
-		var rondonia = [["MOBILIDADE",83160.00],["IMPLEMENTAÇÃO DE PROJETOS/SISTEMAS",192555166.82],["PESQUISA/EDUCAÇÃO",1549500.00],["MEDICAMENTOS",2801875.80],["ESTRUTURA",6890661.49],["PROJETOS DE SANEMANTO",1312390.32]];
-		var acre = [["MOBILIDADE",9544315.70],["IMPLEMENTAÇÃO DE PROJETOS/SISTEMAS",201248857.50],["PESQUISA/EDUCAÇÃO",349500.00],["MEDICAMENTOS",638862.75],["ESTRUTURA",5981215.48],["PROJETOS DE SANEMANTO",2302882.50]];
+		var amazonas = [["Mobilidade",934120],["Implementação de Projetos/Sistemas",505266926.45],["Pesquisa/Educação",4238538.84],["Medicamentos",8620451.32],["Estrutura",35632047.96],["Projetos de Saneamento",2614977.28]];
+		var roraima = [["Mobilidade",1162347.50],["Implementação de Projetos/Sistemas",70101652.90],["Pesquisa/Educação",49500.00],["Medicamentos",1118095.11],["Estrutura",5899278.71],["Projetos de Saneamento",1056193.08]];
+		var amapa = [["Mobilidade",2603080.00],["Implementação de Projetos/Sistemas",120964128.87],["Pesquisa/Educação",194500.00],["Medicamentos",528552.92],["Estrutura",10994669.61],["Projetos de Saneamento",3166085.20]];
+		var para = [["Mobilidade",3023242.12],["Implementação de Projetos/Sistemas",318927789.37],["Pesquisa/Educação",4498128.11],["Medicamentos",7841157.14],["Estrutura",26364172.11],["Projetos de Saneamento",13781633.71]];
+		var tocantins = [["Mobilidade",238110.03],["Implementação de Projetos/Sistemas",259271317.24],["Pesquisa/Educação",324500.00],["Medicamentos",1615367.95],["Estrutura",8921108.24],["Projetos de Saneamento",1349566.80]];
+		var rondonia = [["Mobilidade",83160.00],["Implementação de Projetos/Sistemas",192555166.82],["Pesquisa/Educação",1549500.00],["Medicamentos",2801875.80],["Estrutura",6890661.49],["Projetos de Saneamento",1312390.32]];
+		var acre = [["Mobilidade",9544315.70],["Implementação de Projetos/Sistemas",201248857.50],["Pesquisa/Educação",349500.00],["Medicamentos",638862.75],["Estrutura",5981215.48],["Projetos de Saneamento",2302882.50]];
 
+		Chartkick.options = {colors: ["#f1c40f", "#CCC"]};
 		var CustomAdapter = {
 			name: "custom",
 			renderCustomChart: function (chart) {
@@ -203,90 +204,90 @@ $(document).ready(function(){
 		switch(id){
 			case 'riograndedonorte':
 				id = 'Rio Grande do Norte';
-				new Chartkick.ColumnChart("column-prefix", riograndedonorte, {prefix: "R$"});
+				new Chartkick.BarChart("column-prefix", riograndedonorte, {prefix: "R$", "xtitle": "Quantidade de dinheiro", "ytitle": "Tipo de investimento"});
 				break;
 			case 'matogrosso':
 				id = 'Mato Grosso';
-				new Chartkick.ColumnChart("column-prefix", matogrosso, {prefix: "R$"});
+				new Chartkick.BarChart("column-prefix", matogrosso, {prefix: "R$", "xtitle": "Quantidade de dinheiro", "ytitle": "Tipo de investimento"});
 				break;
 			case 'mattogrossodosul':
 				id = 'Mato Grosso do Sul';
-				new Chartkick.ColumnChart("column-prefix", mattogrossodosul, {prefix: "R$"});
+				new Chartkick.BarChart("column-prefix", mattogrossodosul, {prefix: "R$", "xtitle": "Quantidade de dinheiro", "ytitle": "Tipo de investimento"});
 				break;
 			case 'santacatarina':
 				id = 'Santa Catarina';
-				new Chartkick.ColumnChart("column-prefix", santacatarina, {prefix: "R$"});
+				new Chartkick.BarChart("column-prefix", santacatarina, {prefix: "R$", "xtitle": "Quantidade de dinheiro", "ytitle": "Tipo de investimento"});
 				break;
 			case 'riograndedosul':
 				id = 'Rio Grande do Sul';
-				new Chartkick.ColumnChart("column-prefix", riograndedosul, {prefix: "R$"});
+				new Chartkick.BarChart("column-prefix", riograndedosul, {prefix: "R$", "xtitle": "Quantidade de dinheiro", "ytitle": "Tipo de investimento"});
 				break;
 			case 'saopaulo':
 				id = 'São Paulo';
-				new Chartkick.ColumnChart("column-prefix", saopaulo, {prefix: "R$"});
+				new Chartkick.BarChart("column-prefix", saopaulo, {prefix: "R$", "xtitle": "Quantidade de dinheiro", "ytitle": "Tipo de investimento"});
 				break;
 			case 'minasgerais':
 				id = 'Minas Gerais';
-				new Chartkick.ColumnChart("column-prefix", minasgerais, {prefix: "R$"});
+				new Chartkick.BarChart("column-prefix", minasgerais, {prefix: "R$", "xtitle": "Quantidade de dinheiro", "ytitle": "Tipo de investimento"});
 				break;
 			case 'riodejaneiro':
 				id = 'Rio de Janeiro';
-				new Chartkick.ColumnChart("column-prefix", riodejaneiro, {prefix: "R$"});
+				new Chartkick.BarChart("column-prefix", riodejaneiro, {prefix: "R$", "xtitle": "Quantidade de dinheiro", "ytitle": "Tipo de investimento"});
 				break;
 			case 'espiritosanto':
 				id = 'Espírito Santo';
-				new Chartkick.ColumnChart("column-prefix", espiritosanto, {prefix: "R$"});
+				new Chartkick.BarChart("column-prefix", espiritosanto, {prefix: "R$", "xtitle": "Quantidade de dinheiro", "ytitle": "Tipo de investimento"});
 				break;
 			case 'distritofederal':
 				id = 'Distrito Federal';
-				new Chartkick.ColumnChart("column-prefix", distritofederal, {prefix: "R$"});
+				new Chartkick.BarChart("column-prefix", distritofederal, {prefix: "R$", "xtitle": "Quantidade de dinheiro", "ytitle": "Tipo de investimento"});
 				break;
 			case 'maranhao':
 				id = 'Maranhão';
-				new Chartkick.ColumnChart("column-prefix", maranhao, {prefix: "R$"});
+				new Chartkick.BarChart("column-prefix", maranhao, {prefix: "R$", "xtitle": "Quantidade de dinheiro", "ytitle": "Tipo de investimento"});
 				break;
 			case 'paraiba':
 				id = 'Paraíba';
-				new Chartkick.ColumnChart("column-prefix", paraiba, {prefix: "R$"});
+				new Chartkick.BarChart("column-prefix", paraiba, {prefix: "R$", "xtitle": "Quantidade de dinheiro", "ytitle": "Tipo de investimento"});
 				break;
 			case 'amapa':
 				id = 'Amapá';
 				popu= "766.679";
-				new Chartkick.ColumnChart("column-prefix", amapa, {prefix: "R$"});
+				new Chartkick.BarChart("column-prefix", amapa, {prefix: "R$", "xtitle": "Quantidade de dinheiro", "ytitle": "Tipo de investimento"});
 				break;
 			case 'ceara':
 				id = 'Ceará';
-				new Chartkick.ColumnChart("column-prefix", ceara, {prefix: "R$"});
+				new Chartkick.BarChart("column-prefix", ceara, {prefix: "R$", "xtitle": "Quantidade de dinheiro", "ytitle": "Tipo de investimento"});
 				break;
 			case 'piaui':
 				id = 'Piauí';
-				new Chartkick.ColumnChart("column-prefix", piaui, {prefix: "R$"});
+				new Chartkick.BarChart("column-prefix", piaui, {prefix: "R$", "xtitle": "Quantidade de dinheiro", "ytitle": "Tipo de investimento"});
 				break;
 			case 'para':
 				id = 'Pará';
 				popu = "8.175.113";
-				new Chartkick.ColumnChart("column-prefix", para, {prefix: "R$"});
+				new Chartkick.BarChart("column-prefix", para, {prefix: "R$", "xtitle": "Quantidade de dinheiro", "ytitle": "Tipo de investimento"});
 				break;
 			case 'rondonia':
 				id = 'Rondônia';
 				popu = "1.768.204";
-				new Chartkick.ColumnChart("column-prefix", rondonia, {prefix: "R$"});
+				new Chartkick.BarChart("column-prefix", rondonia, {prefix: "R$", "xtitle": "Quantidade de dinheiro", "ytitle": "Tipo de investimento"});
 				break;
 			case 'acre':
 				popu = "803.513";
-				new Chartkick.ColumnChart("column-prefix", acre, {prefix: "R$"});
+				new Chartkick.BarChart("column-prefix", acre, {prefix: "R$", "xtitle": "Quantidade de dinheiro", "ytitle": "Tipo de investimento"});
 				break;
 			case 'amazonas': 
 				popu = "3.938.336";
-				new Chartkick.ColumnChart("column-prefix", amazonas, {prefix: "R$"});
+				new Chartkick.BarChart("column-prefix", amazonas, {prefix: "R$", "xtitle": "Quantidade de dinheiro", "ytitle": "Tipo de investimento"},);
 				break;
 			case 'roraima':
 				popu = "505.665";
-				new Chartkick.ColumnChart("column-prefix", roraima, {prefix: "R$"});
+				new Chartkick.BarChart("column-prefix", roraima, {prefix: "R$", "xtitle": "Quantidade de dinheiro", "ytitle": "Tipo de investimento"});
 				break;
 			case 'tocantins':
 				popu = "1.515.126";
-				new Chartkick.ColumnChart("column-prefix", tocantins, {prefix: "R$"});
+				new Chartkick.BarChart("column-prefix", tocantins, {prefix: "R$", "xtitle": "Quantidade de dinheiro", "ytitle": "Tipo de investimento"});
 				break;
 		}
 
@@ -328,6 +329,6 @@ $(document).ready(function(){
 		black.fadeOut(500);
 	}).css({
 		cursor: 'pointer'
-	});;
+	});
 
 });

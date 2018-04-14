@@ -180,7 +180,7 @@ header .imageCol {
 
 .nav-pills .nav-link {
 	background-color: #BBB!important;
-	margin-right: 20px;
+	margin:  0 20px 10px 0;
 	transition: all 0.2s;
 }
 
@@ -298,6 +298,15 @@ footer i:hover {
 }
 
 @media (max-width: 991px){
+	#pills-tab {
+		display: inline;
+	}
+	.nav-pills .nav-link {
+		background-color: #BBB!important;
+		transition: all 0.2s;
+		width: 100%;
+	}
+
 	header {
 		height: 550px;
 		text-align: center;

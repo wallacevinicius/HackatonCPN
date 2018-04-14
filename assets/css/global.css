@@ -297,6 +297,10 @@ footer i:hover {
 	fill: #FFF;
 }
 
+.alert {
+	font-size: 12px;
+}
+
 @media (max-width: 991px){
 	#pills-tab {
 		display: inline;
